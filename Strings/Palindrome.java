@@ -1,4 +1,5 @@
-import java.util.*;
+package Strings;
+
 public class Palindrome {
 
     public static boolean PALINDROME(String str){
