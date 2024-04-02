@@ -40,6 +40,33 @@ public class Operations{
         }
     }
 
+    public static int Clearlastbit(int n, int i){
+        int bitmask = -1<<i; //we can use -1<<i OR ~0<<i
+        return bitmask & n;
+    }
+
+    public static int ClearbitsInRange(int n, int i, int j){
+        int a=(~0)<<j+1;
+        int b =(1<<i)-1;
+        int bitmask= a|b;
+        return n & bitmask;
+    }
+
+    public static boolean isPowerOfTwo(int n){
+        return (n&(n-1))==0;
+    }
+
+    public static int CountSetBit(int n){
+        int Count=0;
+        while (n>0) {
+            if ((n&1) !=0) {
+                Count ++;
+            }
+            n = n>>1;
+        }
+        return Count;
+    }
+
 
     public static void main (String args[]){
         // System.out.println(Getbit(3,10));
@@ -47,7 +74,10 @@ public class Operations{
         // System.out.println(Clearbit(1,10));
         // System.out.println(Clearbit1(1,10));
         // System.out.println(Updatebit(0));
-        
+        //System.out.println(Clearlastbit(15,2));
+        //System.out.println(ClearbitsInRange(10, 2, 4));
+        //System.out.println(isPowerOfTwo(15));
+        System.out.println(CountSetBit(15));
     }
 
 }
