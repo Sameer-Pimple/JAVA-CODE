@@ -29,6 +29,6 @@ public class pattern10{
         }
     }
     public static void main(String[] args) {
-        buttterfly(8);
+        buttterfly(4);
     }
 }

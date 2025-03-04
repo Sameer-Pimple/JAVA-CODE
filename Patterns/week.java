@@ -24,7 +24,7 @@ import java.util.*;
           break;
     case 5 :
      System.out.println("thusday");
-          break;
+          break;6
     case 6 :
      System.out.println("friday");
          break;
