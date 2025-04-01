@@ -3,7 +3,7 @@ import java.util.*;
 class TWODArrays{
 
     public static void search(int key,int matrix[][]) {
-        for(int i=0; i<matrix.length; i++){
+         for(int i=0; i<matrix.length; i++){
             for(int j=0; j<matrix[0].length; j++){
                 if (matrix[i][j]==key) {
                     System.out.println("Key Found At " + i + "," + j);

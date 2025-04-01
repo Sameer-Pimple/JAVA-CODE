@@ -30,7 +30,7 @@ public class BinarytreeB {
             return newnode;
             
         }
-
+        //preorder        Preorder tree :1 2 4 5 3 6
         public static void preorder(Node root) {
             if (root == null) {
                 return;
@@ -40,7 +40,7 @@ public class BinarytreeB {
             preorder(root.right);
 
         }
-        
+        //Inorder           Inorder tree :4 2 5 1 3 6
         public static void Inorder(Node root) {
             if (root == null) {
                 return;
@@ -49,7 +49,7 @@ public class BinarytreeB {
             System.out.print(root.data + " ");
             Inorder(root.right);
         }
-        
+        // Postorder        Postorder tree :4 5 2 6 3 1
         public static void Postorder(Node root) {
             if (root == null) {
                 return;
@@ -58,7 +58,7 @@ public class BinarytreeB {
             Postorder(root.right);
             System.out.print(root.data + " ");
         }
-        
+        //Levelorder
         public static void Levelorder(Node root) {
             if (root == null) {
                 return;
@@ -89,7 +89,18 @@ public class BinarytreeB {
         }
     }
     public static void main(String args[]){
-        int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        
+        /*
+             1
+            / \
+           2   3
+          / \    \
+         4   5    6
+        
+        
+        
+        */ 
         Binarytree tree = new Binarytree();
         Node root = tree.buildtree(nodes);
 

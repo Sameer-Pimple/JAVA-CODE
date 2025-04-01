@@ -22,14 +22,14 @@ public class Lque1 {
         return Math.max(lh, rh)+1;
     }
 
-    public static void main(String[] args) {
+    public static void main(String args[] ){
         /*
-                 1
-                / \
-               2   3
-              / \   / \
-            4    5  6  7
-        
+         * 1
+         * / \
+         * 2 3
+         * / \ / \
+         * 4 5 6 7
+         * 
          */
         Node root = new Node(1);
         root.left = new Node(2);
@@ -39,6 +39,5 @@ public class Lque1 {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
         System.out.println(Treelength(root));
-        
     }
-}
+}  
