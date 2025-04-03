@@ -1,4 +1,6 @@
 public class AVLBSTTree {
+
+
     public static class Node {
         int data, height;
         Node left, right;
@@ -9,6 +11,7 @@ public class AVLBSTTree {
         }
     }
 
+    
     public static Node root;
 
     public static int height(Node root) {
