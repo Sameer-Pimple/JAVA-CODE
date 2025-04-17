@@ -71,7 +71,7 @@ public class LBSTQue {
               /   \
             5      10
            / \      \
-          3   6      11g 
+          3   6      11 
          */
         for (int i = 0; i < value.length; i++) {
             root = Insert(root, value[i]);
@@ -79,6 +79,7 @@ public class LBSTQue {
         Inorder(root);
         System.out.println();
         Mirror(root);
+        System.out.println(isValidBST(root, root, root));
         Inorder(root);
     }
 }

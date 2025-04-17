@@ -22,16 +22,24 @@ public class AVLQue2 {
             return root.data;
         }
         
-        if (k < root.data) {
-            if (k < root.right.data) {
-                
+        if (k < root.data  && root.left !=null) {
+            if (k <= root.left.data) {
+                int diffpre =  root.data -k;
+                int diffnext =k- root.right.data;
+                if (diffpre > diffnext) {
+                    return root.right.data;
+                } 
             }
             return ClosestElement(root.left, k);
 
         } 
-        else if (k > root.data) {
+        else if (k > root.data && root.right !=null) {
             if (k < root.right.data) {
-
+                int diffpre = k - root.data;
+                int diffnext = root.right.data-k;
+                if (diffpre > diffnext) {
+                    return root.right.data;
+                }
             }
             return ClosestElement(root.right, k);
         } 
@@ -47,6 +55,15 @@ public class AVLQue2 {
         root.left.right = new Node(6);
         root.right.right = new Node(20);
 
-        System.out.println(ClosestElement(root, 11));
+        /*
+               8
+              / \
+             5   11
+            / \   \
+           3   6   20
+          
+         */
+
+        System.out.println(ClosestElement(root, 10));
     }
 }
