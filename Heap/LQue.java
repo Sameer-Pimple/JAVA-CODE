@@ -25,7 +25,7 @@ public class LQue {//Heapify is a function which is used Correcting Heap
             }
         }
         //Heap function for peek
-        public int peek() {
+        public int peek() { 
             return arr.get(0);
         }
 
