@@ -3,10 +3,9 @@ import java.util.ArrayList;
 public class Que2 {
     public static boolean lonely(ArrayList<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
-            if () {
-                
-            }
+            return false;
         }
+        return true;
     }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(); //5,6,8,10

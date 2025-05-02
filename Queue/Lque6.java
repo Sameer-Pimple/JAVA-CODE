@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.LinkedList;
 public class Lque6 {
 
     public static void ReverceQueue(Queue<Integer> q) {
