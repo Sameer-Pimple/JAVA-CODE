@@ -1,4 +1,4 @@
-// import java.util.LinkedList;  We can't use linked list import because we already get our own linked list class 
+//import java.util.LinkedList;  We can't use linked list import because we already get our own linked list class 
 
 public class  LinkedList{
 

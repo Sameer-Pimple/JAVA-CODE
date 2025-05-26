@@ -20,4 +20,4 @@ public class Que2 {
         FindSub(str, "", 0);
     }
 }
- 
+  

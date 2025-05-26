@@ -39,7 +39,7 @@ public class StackL7 {
     }
 
     public static void main(String[] args) {
-        String str = "((a+b))";
+        // String str = "((a+b))";
         String str2 = "(a+b)";
         System.out.println(DuplicateBracket(str2));
     }
