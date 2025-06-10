@@ -1,5 +1,5 @@
-package Graph;
 import java.util.*;
+import java.util.LinkedList;
 
 public class BFSGraph {
     static class Edge {
@@ -55,6 +55,7 @@ public class BFSGraph {
         boolean vis[] = new boolean[graph.length];
 
         q.add(0);
+
         while (!q.isEmpty()) {
             int curr = q.remove();
 
@@ -66,6 +67,7 @@ public class BFSGraph {
                     q.add(e.Destination);
                 }
             }
+            
         }
     }
     
@@ -109,18 +111,18 @@ public class BFSGraph {
          0        |  5 -- 6 
           \       | / 
            2 ---- 4
-         */
+        */
 
         int V = 7;
-        ArrayList<Edge> graph[] = new ArrayList[7];
+        ArrayList<Edge> graph[] = new ArrayList[V];
         CreateGraph(graph);
         System.out.print("BSF Output : ");
         BFS(graph);
         System.out.println();
-        System.out.print("DSF Output : ");
-        DFS(graph, 0, new boolean[V]);
-        System.out.println();
-        System.out.println("It has path : "+ Haspath(graph, 0, 5, new boolean[V]));
+        // System.out.print("DSF Output : ");
+        // DFS(graph, 0, new boolean[V]);
+        // System.out.println();
+        // System.out.println("It has path : "+ Haspath(graph, 0, 5, new boolean[V]));
         
     }
 }

@@ -67,7 +67,7 @@ public class ComponentGraph {
         }
     }
 
-    static void DFSUtil(ArrayList<Edge> graph[] ,int sor, boolean vis[]) {
+    static void DFSUtil(ArrayList<Edge> graph[], int sor, boolean vis[]) {
         System.out.print(sor + " ");
         vis[sor] = true;
         for (int i = 0; i < graph[sor].size(); i++) {
@@ -76,6 +76,10 @@ public class ComponentGraph {
                 DFSUtil(graph, e.destination, vis);
             }
         }
+    }
+    
+    static void BSF(ArrayList<Edge> graph[]) {
+        
     }
 
     public static void main(String args[]) {
