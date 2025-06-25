@@ -42,6 +42,7 @@ public class isCycleDirected {
 
     public static void main(String[] args) {
         int V = 4;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graph[] = new ArrayList[V];
         CreateGraph(graph);
         System.out.println(Cyclecheck(graph, new boolean[V], new boolean[V], 0));

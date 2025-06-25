@@ -2,7 +2,6 @@
  * Que1
  */
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class VideoQue1 {
 

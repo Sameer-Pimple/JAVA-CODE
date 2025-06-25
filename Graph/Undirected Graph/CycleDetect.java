@@ -20,6 +20,7 @@ public class CycleDetect {
         // Vertex 0
         graph[0].add(new Edge(0, 1, 1));
         graph[0].add(new Edge(0, 2, 1));
+        graph[0].add(new Edge(0, 3, 1));
 
         // Vertex 1
         graph[1].add(new Edge(1, 0, 1));
@@ -66,6 +67,7 @@ public class CycleDetect {
 
     public static void main(String[] args) {
         int V = 5;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graph []= new ArrayList[V];
         /*
             0 -----3

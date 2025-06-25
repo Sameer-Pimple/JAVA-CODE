@@ -3,6 +3,7 @@ import java.util.Stack;
 
 //Topological is graph directed graph which does not having a cycle...
 // WE have solve this que Using DFS...
+// DAG Means that Directed ACyclic(a graph does not having cycle) Graph
 public class TopologicalQue {
     static class Edge {
         int source;
