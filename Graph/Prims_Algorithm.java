@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 /*
-It is a Mnimum Spinning tree (MST) means it a subset of the edges of a connected , edges- weighted undirected graph that 
+It is a Minimum Spinning tree (MST) means it a subset of the edges of a connected , edges- weighted undirected graph that 
 connects all the vertices toghter , without any cycles and with the minimum possible total edge weight.
 */  
 public class Prims_Algorithm {

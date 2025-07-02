@@ -1,4 +1,4 @@
-package Graph;
+
 /*
 In this Que There is a concept as Connected Component here there is a Graph which has
 two seperate component but it is One Graph we have to traverse the full graph but if we try 
