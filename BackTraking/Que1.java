@@ -1,3 +1,4 @@
+
 public class Que1 {
     public static void Changearray(int arr[], int i, int val) {
         //base case

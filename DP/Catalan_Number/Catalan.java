@@ -1,3 +1,4 @@
+package Catalan_Number;
 public class Catalan {
 
     public static int CatalanCalculater(int n){
@@ -6,7 +7,7 @@ public class Catalan {
         }
         int ans = 0;
 
-        for(int i = 0; i<=n+1; i++){
+        for(int i = 0; i < n; i++){
             // Caatalan Number (C(n)) = sum of C(i) * C(n - 1 - i), for i = 0 to n-1
             ans += CatalanCalculater(i) * CatalanCalculater(n-i-1);
         }
