@@ -1,0 +1,8 @@
+
+Knapsack matlb ak bag hoti hai ....Type
+
+1. Fractional Knapsack....(Greedy Algorithm me hi use hota hai)
+
+2. 0-1 Knapsack ......(Ye generally DP me hi use hota hai..isme ak hi value ya element add hota hai 1 elemnent 1 hi bar enter  )
+ The difference between 0-1Knapsack & Unbounded Knapsack is Math.max(val[i-1]+dp[i][j - wt[i-1]], dp[i-1][j]);   here val[i-1]+dp[i][j - wt[i-1]] in Unbounded dp[i] & 0-1kanpsack me dp[i-1]
+3.Unbouneded Knapsack.....(ye bhi saame hai..but isme ham 1 hi value ko bar bar le sakte hai...until we reach the Level of Capacity) 

@@ -19,5 +19,10 @@ public class EmptyBag {
         int wt[] = {2,5,1,3,4};
         int W = 7;
         System.out.println(Knapsackbagfill(val, wt, W, val.length));
-    }    
+    }    /*
+    Knapsack matlb 1 bag...and 0-1 Knapsack maatlb include or exclude wala bag...value ko leke aage jayenge ya value ko nhi nahi lenge
+    Knapsack me Meiomizastion matlb jisme Pure Recusrsion use hota hai...calling the function with increamenting the value
+    Knapsack me Tabulisation matlb pure for Loop....with 2D Array...just Increasing i++, j++
+
+    */
 }
